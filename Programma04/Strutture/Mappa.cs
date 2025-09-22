@@ -14,14 +14,15 @@ namespace Programma04.Strutture
         public List<Nodo> nodi { get; set; }
         public List<Arco> archi { get; set; }
 
-        public Mappa() { 
+        public Mappa(string Nome) { 
             nodi = new List<Nodo>();
             archi = new List<Arco>();
+            nome = Nome;
         }
 
-        public void Trova(Nodo da, Nodo a)
+        public List<Arco> Trova(Nodo da, Nodo a)
         {
-
+            return archi;
         }
 
         public void Connetti(Nodo primo, Nodo secondo)
