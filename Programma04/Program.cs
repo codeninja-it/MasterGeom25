@@ -1,4 +1,5 @@
 ﻿using Programma04.Strutture;
+using System.Diagnostics;
 
 namespace Programma04
 {
@@ -6,16 +7,16 @@ namespace Programma04
     {
         static void Main(string[] args)
         {
-            Nodo milano = new Nodo();
-            milano.IdNodo = 0;
-            milano.Nome = "Milano";
-            milano.Descrizione = "Città della Lombardia";
-            milano.Lat = 45.46f;
-            milano.Long = 9.18f;
+            Mappa mappa = new Mappa();
 
-            Nodo[] mappa = new Nodo[] { milano };
+            Nodo primo = new Nodo();
+            primo.Nome = "Firenze";
+            primo.Lat = 43.7695f;
+            primo.Long = 11.2558f;
 
-            Console.WriteLine("Hello, World!");
+            mappa.nodi.Add(primo);
+
+            mappa.Salva("regionetoscana.json");
         }
     }
 }
