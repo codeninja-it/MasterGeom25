@@ -1,0 +1,26 @@
+da	a
+Firenze	Roma
+Firenze	Bologna
+Bologna	Milano
+Bologna	Venezia
+Bologna	Bari
+Milano	Torino
+Milano	Genova
+Milano	Venezia
+Roma	Napoli
+Napoli	Bari
+Napoli	Palermo
+Genova	Firenze
+Bologna	Verona
+Bologna	Padova
+Bologna	Ancona
+Verona	Milano
+Verona	Venezia
+Padova	Venezia
+Venezia	Trieste
+Ancona	Pescara
+Pescara	Bari
+Bari	Reggio C.
+Reggio C.	Messina
+Messina	Palermo
+Messina	Catania

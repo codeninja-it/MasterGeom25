@@ -10,7 +10,6 @@ namespace Programma04.Strutture
     {
         public int IdNodo { get; set; }
         public string Nome { get; set; }
-        public string Descrizione { get; set; }
         public float Y { get; set; }
         public float X { get; set; }
         public DateTime Creazione { get; set; }
@@ -25,11 +24,10 @@ namespace Programma04.Strutture
          * ); 
          */
 
-        public Nodo(int id, string nome, string descrizione, float x, float y)
+        public Nodo(int id, string nome, float x, float y)
         {
             IdNodo = id;
             Nome = nome;
-            Descrizione = descrizione;
             Y = y;
             X = x;
             Creazione = DateTime.Now;
