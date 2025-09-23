@@ -13,6 +13,7 @@ namespace Programma04.Strutture
         public string nome { get; set; }
         public List<Nodo> nodi { get; set; }
         public List<Arco> archi { get; set; }
+        public bool Trovato { get; set; } = false;
 
         public Mappa(string Nome) { 
             nodi = new List<Nodo>();

@@ -13,6 +13,15 @@ namespace Programma04
             mappa.ImportaArchi("archi.txt");
             // salvo il file sul disco
             mappa.Salva("stradario.json");
+            // e calcolo il percorso
+            new Percorso(
+                mappa,
+                mappa.nodi.First(n => n.Nome == "Firenze"),
+                mappa.nodi.First(n => n.Nome == "Venezia"),
+                new Arco[0]
+                );
+
+
         }
     }
 }
