@@ -8,7 +8,7 @@ using System.Text.Json;
 
 namespace Programma04.Strutture
 {
-    internal class Mappa
+    public class Mappa
     {
         public string nome { get; set; }
         public List<Nodo> nodi { get; set; }

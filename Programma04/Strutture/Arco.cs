@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Programma04.Strutture
 {
-    internal class Arco
+    public class Arco
     {
         public int da {  get; set; }
         public int a { get; set; }

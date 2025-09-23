@@ -14,14 +14,20 @@ namespace Programma04
             // salvo il file sul disco
             mappa.Salva("stradario.json");
             // e calcolo il percorso
+            string partenza = Chiedi("Dove vuoi andare");
+            string arrivo = Chiedi("Qual'è la tua destinazione");
             new Percorso(
                 mappa,
-                mappa.nodi.First(n => n.Nome == "Firenze"),
-                mappa.nodi.First(n => n.Nome == "Venezia"),
+                mappa.nodi.First(n => n.Nome == partenza),
+                mappa.nodi.First(n => n.Nome == arrivo),
                 new Arco[0]
                 );
+        }
 
-
+        static string Chiedi(string domanda)
+        {
+            Console.Write(domanda + ":\t");
+            return Console.ReadLine();
         }
     }
 }
